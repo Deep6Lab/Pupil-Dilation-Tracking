@@ -232,7 +232,8 @@ class Ui_MainWindow(object):
                 
      
         #Creating QActionGroup to have radio buttons in the file menu,  code w/o radio buttons commented out above
-        self.ag = QtGui.QActionGroup(MainWindow, exclusive=True)
+      #  self.ag = QtGui.QActionGroup(MainWindow, exclusive=True)
+        self.ag = QtWidgets.QActionGroup(MainWindow)
         self.a1 = self.ag.addAction(self.actionEllipseFitting)
         self.menuOptions.addAction(self.a1)
       #  self.a2 = self.ag.addAction(self.actionManualSelection)
